@@ -1,4 +1,5 @@
 let fs = require('fs');
+let path = require('path');
 let commandLineParser = require('./utils/commandLineParser.js');
 let hashfileDatabase = require('./utils/hashfileDatabase')
 
@@ -44,7 +45,7 @@ module.exports = async function main(args)
         let db =  new hashfileDatabase();
         for (let f of db.querySimilar(hash))
         {
-            console.log(f.similarity, f.name);
+            console.log(f.similarity, path.join(f.dir, f.name));
         }
     }
     
