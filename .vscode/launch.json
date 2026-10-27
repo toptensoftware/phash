@@ -13,9 +13,7 @@
             ],
             "program": "${workspaceFolder}\\index.js",
             "args": [
-                "phash",
-                "Z:\\Negatives\\VueScanJens\\Photo002.jpg",
-                "Z:\\Negatives\\VueScanJens\\Photo003.jpg",
+                "server",
             ]
         }
     ]

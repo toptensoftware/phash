@@ -24,7 +24,12 @@
   "license": "Apache",
   "preferGlobal": true,
   "dependencies": {
+    "@toptensoftware/moe-js": "^0.4.0",
     "@toptensoftware/sqlite": "github:toptensoftware/sqlite",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.19.2",
+    "express-async-errors": "^3.1.1",
+    "express-fileupload": "^1.5.1",
     "glob": "^10.3.12",
     "moment": "^2.30.1",
     "sharp": "^0.33.5",

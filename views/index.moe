@@ -1,0 +1,13 @@
+<h1>Photo Search</h1>
+<form method="post" encType="multipart/form-data">
+    <input type="file" name="file" />
+    <br/>
+    <input type="submit" value="Search" />
+</form>
+
+{{#each model.results}}
+<div>
+<img class="preview" src="/image?file={{item.dir}}/{{item.name}}" />
+<p>{{item.dir}}/{{item.name}}</p>
+</div>
+{{/each}}

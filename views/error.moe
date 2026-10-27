@@ -1,0 +1,2 @@
+<h1>Error {{model.status}} - {{model.message}}</h1>
+<pre>{{model.stack}}</pre>

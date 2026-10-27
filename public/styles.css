@@ -1,0 +1,12 @@
+:root
+{
+    color-scheme: dark;
+    font-family: sans-serif;
+}
+
+img.preview
+{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}

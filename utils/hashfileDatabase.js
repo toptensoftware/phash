@@ -182,10 +182,16 @@ class hashfileDatabase extends Database
     remap(from, to)
     {
         console.log(`Remapping ${from} to ${to}...`)
+
+        if (!from.endsWith('/') && !from.endsWith('\\'))
+            throw new Error("From path must end in path separator");
+        if (!to.endsWith('/') && !to.endsWith('\\'))
+            throw new Error("From path must end in path separator");
+
         let sql = SQL
             .update("Files")
             .append("SET dir=? || SUBSTR(dir, ?)", to, from.length + 1)
-            .append("WHERE dir = ? OR SUBSTR(dir, 1, ?) = ?", from, from.length + 1, from + path.sep);
+            .append("WHERE dir = ? OR SUBSTR(dir, 1, ?) = ?", from, from.length, from);
         sql.log();
         let r = this.run(sql);
         console.log(`Remapped ${r.changes} files`);

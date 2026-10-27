@@ -11,7 +11,11 @@ var parser = commandLineParser.parser({
         },
         {
             name: "phash",
-            helper: "Calculates the phash for a file",
+            help: "Calculates the phash for a file",
+        },
+        {
+            name: "server",
+            help: "Runs a simple web server for photo searching",
         },
         {
             name: "--help",

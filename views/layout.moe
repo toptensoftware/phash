@@ -1,0 +1,10 @@
+<html>
+<head>
+    <link href="/styles.css?v=1" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="initial-scale=1">
+</head>
+<body>
+{{{ inner.body }}}
+</body>
+</html>
+
